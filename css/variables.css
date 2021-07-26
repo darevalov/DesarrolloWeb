@@ -10,8 +10,6 @@
 	--text-color-light: var(--background-color-black);
 	--text-color-dark-light: var(--background-color-light);
 
-	--highlight-color-200: rgb(250, 233, 120);
-    --highlight-color-400: rgb(218, 202, 67);
-    --highlight-color-600: rgb(216, 200, 22);
-	--highlight-color-800: rgba(180, 166, 5);
+	/* Colores */
+	--text-card-header: rgb(6, 3, 167);
 }
