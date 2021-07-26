@@ -1,0 +1,16 @@
+@import url(../variables.css);
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-color-black);
+    color: var(--text-color-dark);
+    align-items: center;
+    padding: 1em;
+}
+
+.socialMedia{
+    display: flex;
+    gap: 2em;
+    padding-right: 2em;
+}

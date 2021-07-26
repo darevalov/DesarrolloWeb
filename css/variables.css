@@ -1,0 +1,17 @@
+:root {
+	--background-color-black: #000;
+	--background-color-dark: #333;
+	--background-color-dark-light: #777;	
+    --background-color-white: #fafafa;
+	--background-color-light: #f3f3f3;
+	--background-color-dark-transparency: rgba(87, 85, 85, 0.3);
+
+	--text-color-dark: var(--background-color-white);
+	--text-color-light: var(--background-color-black);
+	--text-color-dark-light: var(--background-color-light);
+
+	--highlight-color-200: rgb(250, 233, 120);
+    --highlight-color-400: rgb(218, 202, 67);
+    --highlight-color-600: rgb(216, 200, 22);
+	--highlight-color-800: rgba(180, 166, 5);
+}
