@@ -1,0 +1,100 @@
+.menu {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    padding-right: 2em;
+}
+.menu * {
+    box-sizing: border-box;
+}
+.menu li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0.5em 1em;
+    overflow: hidden;
+    position: relative;
+    border-radius: 3px;
+}
+.menu li:before,
+.menu li:after {
+    display: block;
+}
+.menu li:before {
+    left: 0%;
+}
+.menu li:after {
+    left: 75%;
+}
+.menu a {
+    backface-visibility: hidden;
+    color: #e6e6e6;
+    display: block;
+    padding: 0.5em 0.5em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+}
+.menu a:before {
+    left: 25%;
+}
+.menu a:after {
+    left: 50%;
+}
+.menu a:hover {
+    color: #ffffff;
+}
+.menu li:before,
+.menu li:after,
+.menu a:before,
+.menu a:after {
+    background-color: rgba(180, 166, 5);
+    position: absolute;
+    height: 100%;
+    width: 26%;
+    top: 0;
+    content: '';
+    z-index: -1;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+.menu li:hover:before,
+.menu li.current:before,
+.menu li:hover:after,
+.menu li.current:after,
+.menu li:hover a:before,
+.menu li.current a:before,
+.menu li:hover a:after,
+.menu li.current a:after {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+}
+.menu li:hover:before,
+.menu li.current:before {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.menu li:hover:after,
+.menu li.current:after {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+.menu li:hover a:before,
+.menu li.current a:before {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+.menu li:hover a:after,
+.menu li.current a:after {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+}
+
+.menu-active {
+    text-shadow: 0px 0px 3px rgba(180, 166, 5);
+    color: rgba(180, 166, 5);
+    background-color: rgba(180, 166, 5);
+}
