@@ -10,6 +10,8 @@ a {
     text-decoration: none;
 }
 
+/* Index */
+
 .quote-text{
     text-align: center;
     margin: 0px;
@@ -23,4 +25,10 @@ a {
 .quote-text.style2{
     font-size: 20px;
     color: rgb(216, 200, 22);
+}
+
+/* News */
+
+h1.text-white.align-middle{
+    text-align: center;
 }
