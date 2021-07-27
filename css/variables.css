@@ -1,6 +1,6 @@
 :root {
-	--background-color-black: #000;
-	--background-color-dark: #333;
+	
+	
 	--background-color-dark-light: #777;	
     --background-color-white: #fafafa;
 	--background-color-light: #f3f3f3;
@@ -12,4 +12,6 @@
 
 	/* Colores */
 	--text-card-header: rgb(6, 3, 167);
+	--background-color-black: #000;
+	--background-color-dark: rgb(196, 196, 196);
 }
