@@ -154,11 +154,26 @@ blockquote{
 /* End Home Styles */
 
 /* News Styles */
-
 .bbg-color{
-    background-image: linear-gradient(#222, #666); 
+    background-image: linear-gradient(#333, #888) 
 }
 
 .cards-bg-color{
-    background-color: var(--background-color-dark);
+    background-color: var(--background-color-light);
+}
+
+.cards-body.p{
+    margin-bottom: 0.5rem;
+}
+/* End News Styles  */
+
+
+
+
+/* Robots Styles */
+
+.card-text > p{
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 0;
+    text-align: justify;
 }
