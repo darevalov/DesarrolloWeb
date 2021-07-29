@@ -177,3 +177,7 @@ blockquote{
     margin: 0;
     text-align: justify;
 }
+
+.card-img-align{
+    padding: 1rem;
+}
