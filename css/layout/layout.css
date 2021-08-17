@@ -13,28 +13,7 @@
     margin: 0;
 }
 
-#news{
-    padding: 10vh;
-    padding-top: 15vh;
-    border: 0;
-    height: 80vh;
-    width: 100%;
-    margin: 0;
-    background-image: linear-gradient(#000, #222);
-}
 
-#album{
-    padding: 0px;
-    border: 0;
-    height: 80vh;
-    width: 100%;
-    margin: 0;
-    background-image: linear-gradient(#333, #888);
-}
-
-.album{
-    text-align: center;
-}
 
 /* Home Style */
 /* QuotBlock */
@@ -53,8 +32,8 @@ blockquote{
 }
 
 /* Cards */
-.wrapper {
-    margin: 10vh;
+.card-container {
+    background-image: linear-gradient(#000, #222);
 }
 .card {
     border: none;
@@ -117,6 +96,7 @@ blockquote{
 }
 .card .card-body {
     transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    /* padding: 1rem 1rem 1rem 1rem; */
 }
 .card:hover {
     cursor: pointer;
@@ -151,11 +131,17 @@ blockquote{
     background-image: url(../../assets/images/news4.png);
     background-position: center;
 }
+.news-container {
+    background-image: linear-gradient(#333, #888);
+}
+.album{
+    text-align: center;
+}
 /* End Home Styles */
 
 /* News Styles */
 .bbg-color{
-    background-image: linear-gradient(#333, #888) 
+    background-image: linear-gradient(#333, #888);
 }
 
 .cards-bg-color{
@@ -166,9 +152,6 @@ blockquote{
     margin-bottom: 0.5rem;
 }
 /* End News Styles  */
-
-
-
 
 /* Robots Styles */
 
@@ -253,8 +236,10 @@ blockquote{
 }
 
 .disc-card .year{
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
+    /* padding-top: 0.3rem;
+    padding-bottom: 0.3rem; */
 }
 .disc-card .details {
     position: absolute;
@@ -264,11 +249,11 @@ blockquote{
     height: 100%;
     background: linear-gradient(180deg, rgba(43,40,40,1) 0%, rgba(65,60,60,1) 31%, rgba(94,92,92,1) 87%, rgba(93,92,92,1) 100%);
     color: whitesmoke;
-
-
     transition: .5s;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
     transform-origin: left;
     transform: perspective(2000px) rotateY(-90deg);
 }
@@ -276,8 +261,9 @@ blockquote{
     transform: perspective(2000px) rotateY(0deg);
 }
 .disc-card .details ol{
-    font-size: 0.8rem;
-    list-style: none;
+    font-size: 0.6rem;
+    list-style: disc;
+    list-style-position: inside;
     text-align: center;
     padding:0;
     height: 100%;

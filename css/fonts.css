@@ -32,3 +32,8 @@ a {
 h1.text-white.align-middle{
     text-align: center;
 }
+
+.news p{
+    font-size: 0.9rem;
+    text-align: justify;
+}
