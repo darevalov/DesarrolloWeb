@@ -13,7 +13,8 @@
     margin: 0;
 }
 
-/* Home Style */
+
+/* Home Code */
 /* QuotBlock */
 blockquote{
     border-left:none
@@ -145,7 +146,9 @@ blockquote{
     min-height: 300px;
     }
 }
-/* End Home Styles */
+/* End Home Code */
+
+
 
 
 /* News Styles */
@@ -156,14 +159,12 @@ blockquote{
 .cards-bg-color{
     background-color: var(--background-color-light);
 }
+/* End News Styles*/
 
-.cards-body.p{
-    margin-bottom: 0.5rem;
-}
-/* End News Styles  */
+
+
 
 /* Robots Styles */
-
 .card-subtitle{
     padding-left: 2rem;
     padding-right: 2rem;
@@ -181,39 +182,20 @@ blockquote{
 }
 
 /* Quotes */
-
 .blockquote1 {
     padding: 1.5rem 2.5rem 1.5rem 2.5rem;
     position: relative;
     border-top-color: #000;
+    p {
+        text-align: center;
+        font-style: italic;
+        font-weight: bold;
+        margin: 0;
+    }
 }
-.blockquote1 p {
-    text-align: center;
-    font-size: 1.3rem;
-    font-style: italic;
-    font-weight: bold;
-}
-
-.blockquote2 {
-    padding: 1.5rem 2.5rem 1.5rem 2.5rem;
-    position: relative;
-    margin: 0;
-}
-.blockquote2 p {
-    text-align: center;
-    margin: 0;
-}
-
-.blockquote2:before {
-    position: absolute;
-    font-family: 'FontAwesome';
-    top: 0;
-    content:"\f10d";
-    font-size: 5rem;
-    color: rgba(0,0,0,0.1);
-}
-
 /* End Robots Styles */
+
+
 
 
 /* Discografia Styles */
@@ -227,69 +209,63 @@ blockquote{
     height: 100%;
     background: #000;
     align-items: center;
+    .image {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            transition: .5s;
+        }
+    }
+    &:hover {
+        .image {
+            img {
+                opacity: .5;
+                transform: translateX(30%);
+            }
+        }
+        .details {
+            transform: perspective(2000px) rotateY(0deg);
+        }
+    }
+    .year {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .details {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(43,40,40,1) 0%, rgba(65,60,60,1) 31%, rgba(94,92,92,1) 87%, rgba(93,92,92,1) 100%);
+        color: whitesmoke;
+        transition: 0.5s;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        transform-origin: left;
+        transform: perspective(2000px) rotateY(-90deg);
+        ol {
+            font-size: 0.6rem;
+            list-style: disc;
+            list-style-position: inside;
+            text-align: center;
+            padding:0;
+            height: 100%;
+        }
+    }
 }
-.disc-card .image {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.disc-card .image img {
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    transition: .5s;
-}
-.disc-card:hover .image img {
-    opacity: .5;
-    transform: translateX(30%);
-}
-
-.disc-card .year{
-    font-size: 12px;
-    font-weight: bold;
-    /* padding-top: 0.3rem;
-    padding-bottom: 0.3rem; */
-}
-.disc-card .details {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(43,40,40,1) 0%, rgba(65,60,60,1) 31%, rgba(94,92,92,1) 87%, rgba(93,92,92,1) 100%);
-    color: whitesmoke;
-    transition: .5s;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
-    transform-origin: left;
-    transform: perspective(2000px) rotateY(-90deg);
-}
-.disc-card:hover .details {
-    transform: perspective(2000px) rotateY(0deg);
-}
-.disc-card .details ol{
-    font-size: 0.6rem;
-    list-style: disc;
-    list-style-position: inside;
-    text-align: center;
-    padding:0;
-    height: 100%;
-}
-.disc-card .details .center {
-    padding: 5px;
-    text-align: center;
-    background: #fff;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 /* Discografia Style End */
 
-/* Galeria Style */
 
+
+
+/* Galeria Style */
 .galeria img {
 	width: 30%;
 	float:left;
