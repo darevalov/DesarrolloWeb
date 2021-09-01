@@ -1,0 +1,18 @@
+a {
+    text-decoration: none;
+}
+
+/* Index */
+.quote-text{
+    text-align: center;
+    margin: 0px;
+    text-shadow: 2.5px 2.5px #333;
+
+    &.style1{
+        font-size: 30px;
+    }
+    &.style2{
+        font-size: 20px;
+        color: rgb(216, 200, 22);
+    }
+}

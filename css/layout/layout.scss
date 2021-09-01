@@ -1,0 +1,297 @@
+@import url(header.css);
+@import url(body.css);
+@import url(footer.css);
+
+#portada{
+    background-image: 
+    linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.3617822128851541) 35%, rgba(0,212,255,0) 100%),
+    url(../../assets/images/portada.jpg);
+    background-size: cover;
+    background-position-x: center;
+    height: 65vh;
+    width: 100%;
+    margin: 0;
+}
+
+/* Home Style */
+/* QuotBlock */
+blockquote{
+    border-left:none
+}
+.quote-box{
+    overflow: hidden;
+    margin-top: -50px;
+    padding: 30px;
+    background-color: rgba(87, 85, 85, 0.3);
+    margin-top: 25px;
+    color:white;
+    width: 800px;
+    border: 20px;
+}
+/* Cards */
+.card-container {
+    background-image: linear-gradient(#000, #222);
+}
+.card {
+    border: none;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    overflow: hidden;
+    border-radius: 5px;
+    min-height: 450px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+
+    &.card-has-bg {
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        background-size: 110%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &.card-has-bg:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: inherit;
+        -webkit-filter: grayscale(1);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+
+    &.card-has-bg:hover {
+            transform: scale(0.98);
+            box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+            background-size: 130%;
+            transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    &.card-has-bg:hover .card-img-overlay {
+        transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        background: linear-gradient(0deg, rgba(67, 95, 138, 0.5) 0%, #585703 100%);
+    }
+
+    .card-meta {
+        color: var(--text-card-header);
+    }
+
+    .card-body {
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    &:hover{
+        cursor: pointer;
+        transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+
+        &.card-body {
+            margin-top: 30px;
+            transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+    }
+
+    .card-img-overlay {
+        transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+        background: #234f6d;
+        background: linear-gradient(0deg, rgba(68, 72, 12, 0.3785889356) 0%, #ffc00085 100%);
+    }
+}
+
+.card-footer {
+    background: none;
+    border-top: none;
+    .media {
+        img{
+            max-width:50px;
+        }
+    }
+}
+
+#card1{
+    background-image: url(../../assets/images/news1.jpg);
+    background-position: center;
+}
+
+#card2{
+    background-image: url(../../assets/images/news2.jpg);
+    background-position: center;
+}
+
+#card3{
+    background-image: url(../../assets/images/news3.jpg);
+    background-position: center;
+}
+
+#card4{
+    background-image: url(../../assets/images/news4.png);
+    background-position: center;
+}
+.news-container {
+    background-image: linear-gradient(#333, #888);
+}
+.album{
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .card {
+    min-height: 350px;
+    }
+}
+@media (max-width: 420px) {
+    .card {
+    min-height: 300px;
+    }
+}
+/* End Home Styles */
+
+
+/* News Styles */
+.bbg-color{
+    background-image: linear-gradient(#333, #888);
+}
+
+.cards-bg-color{
+    background-color: var(--background-color-light);
+}
+
+.cards-body.p{
+    margin-bottom: 0.5rem;
+}
+/* End News Styles  */
+
+/* Robots Styles */
+
+.card-subtitle{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.card-text > p{
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 0;
+    text-align: justify;
+}
+
+.card-img-align{
+    padding: 0rem 2rem 0rem 2rem;
+    position: relative;
+}
+
+/* Quotes */
+
+.blockquote1 {
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+    position: relative;
+    border-top-color: #000;
+}
+.blockquote1 p {
+    text-align: center;
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.blockquote2 {
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+    position: relative;
+    margin: 0;
+}
+.blockquote2 p {
+    text-align: center;
+    margin: 0;
+}
+
+.blockquote2:before {
+    position: absolute;
+    font-family: 'FontAwesome';
+    top: 0;
+    content:"\f10d";
+    font-size: 5rem;
+    color: rgba(0,0,0,0.1);
+}
+
+/* End Robots Styles */
+
+
+/* Discografia Styles */
+
+.disc-card {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background: #000;
+    align-items: center;
+}
+.disc-card .image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.disc-card .image img {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    transition: .5s;
+}
+.disc-card:hover .image img {
+    opacity: .5;
+    transform: translateX(30%);
+}
+
+.disc-card .year{
+    font-size: 12px;
+    font-weight: bold;
+    /* padding-top: 0.3rem;
+    padding-bottom: 0.3rem; */
+}
+.disc-card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(43,40,40,1) 0%, rgba(65,60,60,1) 31%, rgba(94,92,92,1) 87%, rgba(93,92,92,1) 100%);
+    color: whitesmoke;
+    transition: .5s;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+}
+.disc-card:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+}
+.disc-card .details ol{
+    font-size: 0.6rem;
+    list-style: disc;
+    list-style-position: inside;
+    text-align: center;
+    padding:0;
+    height: 100%;
+}
+.disc-card .details .center {
+    padding: 5px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Discografia Style End */
+
+/* Galeria Style */
+
+.galeria img {
+	width: 30%;
+	float:left;
+	margin:1.66%;
+}
