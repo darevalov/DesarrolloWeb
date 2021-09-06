@@ -1,17 +1,14 @@
 :root {
-	
-	
-	--background-color-dark-light: #777;	
-    --background-color-white: #fafafa;
-	--background-color-light: #f3f3f3;
-	--background-color-dark-transparency: rgba(87, 85, 85, 0.3);
-
-	--text-color-dark: var(--background-color-white);
-	--text-color-light: var(--background-color-black);
-	--text-color-dark-light: var(--background-color-light);
-
-	/* Colores */
-	--text-card-header: rgb(6, 3, 167);
-	--background-color-black: #000;
-	--background-color-light: rgb(196, 196, 196);
+  --background-color-dark-light: #777;
+  --background-color-white: #fafafa;
+  --background-color-light: #f3f3f3;
+  --background-color-dark-transparency: rgba(87, 85, 85, 0.3);
+  --text-color-dark: var(--background-color-white);
+  --text-color-light: var(--background-color-black);
+  --text-color-dark-light: var(--background-color-light);
+  /* Colores */
+  --text-card-header: rgb(6, 3, 167);
+  --background-color-black: #000;
+  --background-color-light: rgb(196, 196, 196);
 }
+/*# sourceMappingURL=variables.css.map */
